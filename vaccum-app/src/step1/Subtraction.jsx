@@ -5,3 +5,5 @@ let Subtraction=()=>{
         </>
     )
 }
+
+export default Subtraction;
