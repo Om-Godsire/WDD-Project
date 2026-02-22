@@ -1,15 +1,29 @@
-import Addition from "./add";
+import Addition from "./Addition";
+import Division from "./Division";
 import Multiplication from "./Multiplication";
 import Subtraction from "./Subtraction";
 
 let Calculator=()=>{
     return(
-        <div className="center flex items-center justify-center">
-            <h1 className="text-2xl rounded-xl bg-blue-900 text-white p-3 b-3 w-1/4 center">Calculator</h1>
+        <div className="flex flex-col item-center justify-center">
+            <div className="flex item-center justify-center">
+                <h1 className="text-2xl rounded-xl bg-blue-900 text-white p-3 b-3 m-4 w-1/4 item-center center flex justify-center">Calculator</h1>
+            </div>
+            <div className="flex flex-col md:flex-row item-center justify-center">
+                <input type="text" className="border-2 border-gray-300 rounded-lg p-2 m-3 w-1/4 center" placeholder="Enter a number"/>
+                <input type="text" className="border-2 border-gray-300 rounded-lg p-2 m-3 w-1/4 center" placeholder="Enter a number"/>
+            </div>
+            <div className="flex item-center justify-center">
+                <button onClick={Addition} className="bg-green-500 text-white p-2 m-3 rounded-lg w-1/4 center hover:bg-red-900">Add</button>
+            </div>
             <Multiplication />
             <Subtraction />
             <Addition />
+            <Division />
         </div>
+        
+
+        
     )
 }
 
