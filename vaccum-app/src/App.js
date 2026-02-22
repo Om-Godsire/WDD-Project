@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Calculator from './step1/Index';
 
 function App() {
   return (
     <div className="App">
-      <h1 style={{fontSize: '3rem'}}>Welcome to live coding</h1>
+      <Calculator/>
     </div>
   );
 }
