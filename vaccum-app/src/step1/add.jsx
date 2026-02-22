@@ -2,4 +2,4 @@ let Addition= () => {
 
 }
 
-export default add;
+export default Addition;
