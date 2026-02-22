@@ -1,3 +1,6 @@
+import Button from "./Button";
+
+
 let Subtraction=()=>{
     let subtraction_click = (num1,num2) => {
 
@@ -5,7 +8,7 @@ let Subtraction=()=>{
         }
     return(
         <>
-            <button className="border-1 bg-green-900 hover:bg-blue-900 shadow-md text-2xl m-2 p-2 text-white mx-auto" onClick={()=>subtraction_click()}>Subtraction</button>   
+        <Button label="Subtraction" fn={subtraction_click} />
         </>
     )
     }
