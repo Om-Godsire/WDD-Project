@@ -1,6 +1,6 @@
 let Addition= () => {
 
-        let additon_click = () => {
+        let additon_click = (num1,num2) => {
 
             alert(num1 + num2);
         }
